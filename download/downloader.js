@@ -1,6 +1,6 @@
 window.DownloadApi = {
 	converter: {
-		darkdiscord: _ => `https://github.com/snappercord/dark-discord/blob/master/BetterDiscord/darkdiscord.theme.css`,
+		darkdiscord: _ => `https://raw.githubusercontent.com/snappercord/dark-discord/master/BetterDiscord/darkdiscord.theme.css`,
 	},
 	convert: (parameterString, error) => {
 		if (typeof parameterString == "string") for (let parameter in window.DownloadApi.converter) {
