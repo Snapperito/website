@@ -1,9 +1,6 @@
 window.DownloadApi = {
 	converter: {
-		library: _ => `https://raw.githubusercontent.com/mwittrien/BetterDiscordAddons/master/Library/0BDFDB.plugin.js`,
-		plugin: arg => `https://raw.githubusercontent.com/mwittrien/BetterDiscordAddons/master/Plugins/${arg}/${arg}.plugin.js`,
-		theme: arg => `https://raw.githubusercontent.com/mwittrien/BetterDiscordAddons/master/Themes/${arg}/${arg}.theme.css`,
-		url: arg => arg = arg.startsWith("https://") || arg.startsWith("http://") ? arg : `https://raw.githubusercontent.com/mwittrien/BetterDiscordAddons/master/${arg}`
+		darkdiscord: _ => `https://github.com/snappercord/dark-discord/blob/master/BetterDiscord/darkdiscord.theme.css`,
 	},
 	convert: (parameterString, error) => {
 		if (typeof parameterString == "string") for (let parameter in window.DownloadApi.converter) {
