@@ -18,7 +18,6 @@ window.DownloadApi = {
 	},
 	download: (url, error) => {
 		if (!url) return error && error("No URL!");
-		if (url.indexOf("raw.githubusercontent.com") == -1 && url.indexOf("github.io") == -1) return error && error(`<a href="${url}">${url}</a> not a valid GitHub File URL!`);
 		const xhttp = new XMLHttpRequest();
 		xhttp.onload = function() {
 			if (this.status == 200) {
